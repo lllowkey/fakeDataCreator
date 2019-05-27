@@ -1,0 +1,40 @@
+{
+  "rdmsConfig" : {
+    "rdmsType": "Oracle",
+    "connectionInfo" : "jdbc:oracle:thin:@//172.24.5.19:1521/ORCL",
+    "username" : "BI",
+    "password" : "baifendian",
+    "dbConfig" : {
+      "dbnumber" : 5,
+      "schemaConfig" : {
+        "scNumber" : 5
+      },
+      "appointConfig": {
+        "ratio" : 0.1
+      },
+      "tableSpaceConfig" : {
+        "tsName" : "bi_space",
+        "tsAddress" : "/opt/u01/app/oraclebi_tspace",
+        "tsSize" : "500MB"
+      },
+      "userConfig" : {
+        "oracleUsername" : "root",
+        "oraclePassword" : "root",
+        "otSpace" : "bi_space"
+      },
+      "tableConfig" : {
+        "tableNumber" : 5,
+        "tableRatio" : 0.1,
+        "columnConfig" : {
+          "minNumber" : 5,
+          "maxNumber" : 100,
+          "specialSize" : "2MB"
+        },
+        "rowNumberConfig" : {
+          "minNumber" : 1000000,
+          "maxNumber" : 10000000
+        }
+      }
+    }
+  }
+}
